@@ -1,0 +1,176 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+<title>邀拍网</title>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ed58cee97bc00b6895f956e8bd6023ed";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body bgcolor="#BFBFBF" leftmargin="130">
+<img id="toplogo" src="image/logo.jpg" width="150" height="150" align="left"/>
+&nbsp;<h1 id="biaoyu" align="left">你要拍，我邀拍</h1>
+
+
+<script type="text/javascript">
+if(localStorage.pagecount) {
+localStorage.pagecount=Number(localStorage.pagecount)+1;
+
+
+}
+
+else{
+localStorage.pagecount=1;
+}
+
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;" );
+document.write("总访问数:" + localStorage.pagecount);
+document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" );
+if(sessionStorage.pagecount) {
+sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+
+
+}
+
+else{
+sessionStorage.pagecount=1;
+}
+
+document.write("当前会话中总访问数:" + sessionStorage.pagecount);
+
+</script>
+
+
+
+
+
+<div id="nav">
+<table bgcolor="#8E8E8E" border="1" bordercolor="black" cellspacing="0" width="800" height="70">
+<tr align="center">
+<td><a href="index.html" target="_top" id="chaolianjie">首页</a></td>
+<td><a href="公司简介/公司简介.html" target="_blank" id="chaolianjie">公司简介</a></td>
+<td><a href="sheyingshizhuye/photographer.html" target="_blank" id="chaolianjie">摄影师</a></td>
+<td><a href="返片/YAOPAI.html" target="_blank" id="chaolianjie">邀拍返片</a></td>
+<td><a href="留言板.htm" target="_blank" id="chaolianjie">留言板</a></td>
+<td><a href="个人中心/personal center.html" target="_blank" id="chaolianjie">个人中心</a></td>
+<td><a href="GD.html" target="_blank">滚动新闻</a></td>
+</tr>
+</table>
+</div>
+
+<br/>
+
+<div style="position:relative;width:1000;height:750;z-index:2;">
+<img id="image" src="image/index1.jpg" onmousedown="secound(this)" onmouseup="first(this)" width="1000" height="700"/>
+
+
+<div style="position:absolute;width:700px;height:100px;z-indent:2;left:0;top:0;font-family:楷体;font-weight:bold;color:white;font-size:40pt;margin-left:16%;margin-top:30%;">
+邀拍带给您最好的摄影体验
+</div>
+
+</div>
+
+<div align="center">
+<button onclick="change()"><img src="image/qiehuan.jpg" width="50" height="40"/></button>
+
+</div>
+
+<script>
+  
+function change() {
+          
+              var x = document.getElementById("image").getAttribute("src");
+ 
+          
+              if (x=="image/index1.jpg"){
+              
+                       document.getElementById("image").src="image/index2.jpg";
+          
+              }
+         
+              else{
+              document.getElementById("image").src="image/index1.jpg";
+          
+              }
+  
+         }
+ 
+   
+function secound(obj){
+        obj.src="image/index2.jpg";
+        console.log(obj.getAttribute("src"));
+    }
+ 
+    
+function first(obj){
+        obj.src="image/index1.jpg";
+        console.log(obj.getAttribute("src"));
+    }
+
+
+</script>
+
+
+<div id="mote" align="center">
+<h1 id="mote1">你，就是模特</h1>
+<h4 id="mote2">只要你想拍摄一套大片，邀拍总有一位摄影师适合你</h4><br/>
+<table cellspacing="10"><tr>
+<td><img src="image/mote1.jpg" width="500" height="800"/></td>
+<td><img src="image/mote4.jpg" width="500" height="800"/></td>
+</tr></table>
+
+<br/><a href="返片/YAOPAI.html" target="_blank"><img src="image/more.jpg" width="200" height="90"/></a>
+</div><br/><br/>
+
+<div id="photographers" align="center">
+<h1>摄影师</h1>
+<h4>邀拍网提供注册摄影师，满足你的不同风格需求</h4><br/>
+<img src="image/photographers.jpg" width="900" height="800"/>
+<br/><br/><a href="sheyingshizhuye/photographer.html" target="_blank"><img src="image/more.jpg" width="200" height="90"/></a>
+</div><br/><br/>
+
+
+<div style="position:relative;width:1300;height:300;">
+
+<img src="image/bottom.jpg" width="1300" height="300"/>
+
+
+<div id="footer" style="position:absolute;z-indent:2;left:0;top:0;">
+  <div class="footer_left">
+<h3>关于我们</h3>
+<p>你要拍，我邀拍！<br/>扫描下方微信公众号</p>
+<img src="wechat.jpg" alt="二维码" height="100" width="100"/><br/>
+  </div>
+  <div class="footer_mid">
+<h3>支付方式</h3>
+<ul>
+<li>
+<p><a href="https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F">微信支付</a></p>
+</li>
+<li><p><a href="https://www.alipay.com/">支付宝</a></p></li>
+<li><p><a href="http://www.chinapay.com/">银联支付</a></p></li>
+</ul>
+  </div>
+  <div class="footer_right">
+<h3>联系我们</h3>
+<ul>
+<li><p>上海市浦东新区海港大道1550号<br/>上海海事大学</p></li>
+<li><a href="mailto:info@example.com">17321168081@163.com</a></li>
+<li>17321168081</li>
+</ul>
+<p align="left">&copy;2018 Yaopai.All rights reserved</p>
+  </div>
+                          </div>
+</div>
+
+
+
+</body>
+</html>
